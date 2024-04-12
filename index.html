@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify-web player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge"> Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you updated</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="backward icon">
+                    <img src="./assets/forward_icon.png" class="hide" alt="forward_icon">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" id="Install"
+                            style="margin-right: 5px;"></i>Install App </button>
+                    <i class="fa-regular fa-user" id="user"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="card2" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="card3" class="card-img">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" alt="card4" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Vijay,Anirudh Ravichander...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/Bollywood-chill.jpg" alt="card5" class="card-img">
+                    <p class="card-title">Bollywood & Chill</p>
+                    <p class="card-info">Arijit Singh, Pritam, Vishal Misra...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/happy-vibes.jpg" alt="card6" class="card-img">
+                    <p class="card-title">Happy Vibes</p>
+                    <p class="card-info">Diljit Dosanjh, Atif Aslam...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/grwm.jpg" alt="card7" class="card-img">
+                    <p class="card-title">#GRWM hindi</p>
+                    <p class="card-info">Alka Yagnik, Mohit Chauhan, lla...</p>
+                </div>
+            </div>
+
+            <h2>Hits Pe Hits</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/telugu.jpg" alt="card8" class="card-img">
+                    <p class="card-title">Telegu Hot Hits</p>
+                    <p class="card-info">Shreya Ghosal, Geeta Madhuri...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/hindi.jpg" alt="card9" class="card-img">
+                    <p class="card-title">Hindi Hits</p>
+                    <p class="card-info">Arijit Singh, Udit Narayan...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/tamil.jpg" alt="card10" class="card-img">
+                    <p class="card-title">Tamil Hits</p>
+                    <p class="card-info">A.R.Rahman, Kamal Hassan...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/song-logo.jpg" alt="song logo" class="song">
+                <div class="song-name">
+                    <div class="name">
+                        <a class="s-name">Akhiyan Gulab</a>
+                        <i class="fa-regular fa-heart ht"></i>
+                    </div>
+                    <a class="si-name">Mitraz</a>
+                </div>
+
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" alt="icon1" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" alt="icon1" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" alt="icon1" class="player-control-icon"
+                        style="opacity: 1; height: 1.7rem;">
+                    <img src="./assets/player_icon4.png" alt="icon1" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" alt="icon1" class="player-control-icon">
+
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">01:12</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">03:33</span>
+                </div>
+            </div>
+            <div class="control">
+
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="1" max="100" class="volume" step="1">
+                <span class="material-symbols-outlined">
+                    branding_watermark
+                    </span>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+</body>
+
+</html>
